@@ -10,6 +10,7 @@ import base64
 import socket
 import threading
 
+'''this program might be stable or unstable.....'''
 
 top=tkinter.Tk()
 top.title("Pyridine")
@@ -121,7 +122,7 @@ def getinfo(event):
         image = soup.find("meta", {"property": "og:image"})["content"]
 
         try:
-            urllib.request.urlretrieve(image, r"StructureImage cache\\"+compound+".gif")
+            urllib.request.urlretrieve(image, r"StructureImage cache\\"+compound+".gif")#you have to create a new file named "StructureImage cache" in the same directory of this program
         except:
             pass
     except:
